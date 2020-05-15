@@ -13,13 +13,13 @@ rm = visa.ResourceManager('@py')
 print(rm)
 print(rm.list_resources())
 
-
+"""
 resource = rm.open_resource('ASRL/dev/ttyGS0::INSTR')
 resource.read_termination = '\n'
 resource.write_termination = '\n'
 resource.timeout = 10001 #5s
 
 while True:
-    print(resource.read('\n'))
+    #print(resource.read('\n'))
     print(resource.write('pi_side'))
-    time.sleep(1)
+    time.sleep(1)"""
